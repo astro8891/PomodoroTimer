@@ -1,7 +1,31 @@
+body {
+    background-color: #443c3d;
+}
+
 .PomodoroHeader {
     font-family: 'Lobster Two', cursive;
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%); /*Need to look at what the shit this does*/
+    font-weight: bold;
+    font-size: 5em;
+    margin-top: 8%;
+    color: #ffffff;
+}
+
+.circle {	
+	float: none;
+    margin: 0 auto;
+    margin-top: 12em;    
+    background: #443c3d;
+    width: 23em;
+    height: 23em;
+    border: .25em solid #00e600;
+    -webkit-border-radius: 400px;
+    -moz-border-radius: 400px;
+    border-radius: 400px;
+}
+
+.circle > p {
+	color: #ffffff;
+	margin-top: 33%;
+	font-weight: bold;
+    font-size: 5em;
 }
