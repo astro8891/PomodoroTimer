@@ -3,11 +3,18 @@ body {
 }
 
 .PomodoroHeader {
-    font-family: 'Lobster Two', cursive;
+	font-family: 'Lobster Two', cursive;
     font-weight: bold;
     font-size: 5em;
     margin-top: 8%;
     color: #ffffff;
+}
+
+.btn {	
+    position: absolute;
+    top: 2em;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .circle {
@@ -38,10 +45,11 @@ body {
 }
 
 .sessionTimeIncriment {
-	position: relative;
+    position: relative;
     color: #ffffff;
     font-weight: bold;
-    font-size: 1.25em;}
+    font-size: 1.25em;
+}
 
 .sessionTime {
     color: #ffffff;
@@ -50,14 +58,14 @@ body {
 }
 
 .breakTimeIncriment {
-	position: relative;
+    position: relative;
     color: #ffffff;
     font-weight: bold;
     font-size: 1.25em;
 }
 
 .breakTime {
-    color: #ffffff;    
+    color: #ffffff;
     font-size: .8em;
     margin-left: 4em;
 }
