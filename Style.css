@@ -10,10 +10,10 @@ body {
     color: #ffffff;
 }
 
-.circle {	
-	float: none;
+.circle {
+    float: none;
     margin: 0 auto;
-    margin-top: 8em;    
+    margin-top: 8em;
     background: #443c3d;
     width: 23em;
     height: 23em;
@@ -24,33 +24,40 @@ body {
 }
 
 .circle > p {
-	color: #ffffff;
-	margin-top: 33%;
-	font-weight: bold;
+    color: #ffffff;
+    margin-top: 33%;
+    font-weight: bold;
     font-size: 5em;
 }
 
-.timers{
-	margin-top: 2em;
-	color: #ffffff;
-	font-weight: bold;
+.timers {
+    margin-top: 2em;
+    color: #ffffff;
+    font-weight: bold;
     font-size: 2em;
 }
 
-.sessionTimeIncriment{
+.sessionTimeIncriment {
+	position: relative;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.25em;}
 
+.sessionTime {
+    color: #ffffff;
+    font-size: .8em;
+    margin-left: 5em;
 }
 
-
-.sessionTime{
-
-	
+.breakTimeIncriment {
+	position: relative;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.25em;
 }
 
-.breakTimeIncriment{
-	
-}
-
-.breakTime{
-	
+.breakTime {
+    color: #ffffff;    
+    font-size: .8em;
+    margin-left: 4em;
 }

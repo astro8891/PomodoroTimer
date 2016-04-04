@@ -2,27 +2,26 @@
 <html>
 
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="Style.css">
+    <script type="text/javascript" src="Script.js"></script>
     <title>Ashley's Pomodoro Timer</title>
 </head>
 
 <body class="container-fluid">
     <h1 class="PomodoroHeader text-center pagination-centered">Ash's Pomodoro Clock</h1>
-    <div class="row timers">
-        <div class="col-xs-6">
-            <div class="sessionTimeIncriment"><a>-</a> Session Length <a>+</a></p>
+    <div class="row">
+        <div class="timers">
+            <div class="sessionTimeIncriment"><a class="sessionNegative">-</a> Session Length <a class="sessionPositive">+</a></p>
                 <div class="sessionTime">25</div>
             </div>
-        </div>
-        <div class="col-xs-6 breakTimer">
-            <div class="breakTimeIncriment"><a>-</a> Break Length <a>+</a>
+            <div class="breakTimeIncriment"><a class="breakNegative">-</a> Break Length <a class="breakPositive">+</a>
                 <div class="breakTime">5</div>
             </div>
         </div>
-    </div>
     </div>
     <div class="circle">
         <p class="text-center pagination-centered">25:00</p>
@@ -30,4 +29,3 @@
 </body>
 
 </html>
-
