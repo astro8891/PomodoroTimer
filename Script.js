@@ -61,27 +61,40 @@ $(function() {
 
     }
 
-    // var startTimer = function() {
-
-    //     var mins = 10;
-    //     var secs = mins * 60;
-    //     var currentSeconds = 0;
-    //     var currentMinutes = 0;
-
-    //     var counter = setInterval(timer, 1000);
-    //     setTimeout(Decrement, 1000);
-
-    //     function Decrement() {
-    //         currentMinutes = Math.floor(secs / 60);
-    //         currentSeconds = secs % 60;
-    //         if (currentSeconds <= 9) currentSeconds = "0" + currentSeconds;
-    //         secs--;
-    //         document.getElementById("timerText").innerHTML = currentMinutes + ":" + currentSeconds; //Set the element id you need the time put into.
-    //         if (secs !== -1) setTimeout('Decrement()', 1000);
-    //     }
 
 
-    //}
+
+    var workTime = $(".countdownTimer")[0].firstChild.data;
+
+
+    function startClock(duration, display) {
+        var timer = duration,
+            minutes, seconds;
+        setInterval(function() {
+            minutes = parseInt(timer / 60, 10);
+            seconds = parseInt(timer % 60, 10);
+
+            minutes = minutes < 10 ? "0" + minutes : minutes;
+            seconds = seconds < 10 ? "0" + seconds : seconds;
+
+            display.text(minutes + ":" + seconds);
+
+            if (--timer < 0) {
+                timer = duration;
+            }
+        }, 1000);
+    }
+
+    $(function($) {
+        var workTimeLeft = 60 * workTime,
+            display = $(".work-time-display");
+        startClock(workTimeLeft, display);
+    });
+
+
+
+
+
 
 
     $(".sessionNegative").click(decrementSessionLength);
